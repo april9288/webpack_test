@@ -1,25 +1,35 @@
 {
   "name": "webpack_test",
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "description": "It doesn't matter whatever you specify here...",
+  "main": "It doesn't matter whatever you specify here...",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest -watchAll",
+    "webpack" : "webpack -w",
+    "server" : "nodemon server/index.js",
+    "start" : "node server/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/april9288/webpack_test.git"
   },
-  "keywords": [],
   "babel": {
     "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
     ]
   },
+  "***dependencies-comments***": {
+    "what is dependencies ?" : "These are modules that are required at runtime."
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "***devDependencies-comments***": {
+    "what is dev dependencies ?" : "These are modules that you use during development. It's like your development tools... testing, compiling, bundling...",
+    "what is babel ?" : "It's a JS compiler. It compiles .jsx files into ES5 version which is readable for most of the browsers",
+    "what is webpack ?" : "It's a module bundler. It bundles your app into static files which broswers can read. It uses not only babel, but also css compilers" 
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
